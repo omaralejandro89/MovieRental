@@ -1,0 +1,29 @@
+﻿@model UniversityLara.Core.Models.University
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>University</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UniversityName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UniversityName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Telephone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Telephone)
+    </div>
+</fieldset>
+<p>
+  @*  @Html.ActionLink("Edit", "Edit", new { id=Model.UniversityId }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>

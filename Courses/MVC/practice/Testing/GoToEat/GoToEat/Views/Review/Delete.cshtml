@@ -1,0 +1,53 @@
+﻿@using GoToEat.Core
+@model GoToEat.Core.Models.Review
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Restaurant Name</h2>
+<h3>Are you sure you want to delete this?</h3>
+<table class="table">
+    <tr>
+        <th class="display-label">
+            @Html.DisplayNameFor(model => model.RestaurantId)
+        </th>        
+        <th class="display-label">
+            @Html.DisplayNameFor(model => model.Reviewer)
+        </th>        
+        <th class="display-label">
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>        
+        <th class="display-label">
+            @Html.DisplayNameFor(model => model.Body)
+        </th>
+
+    </tr>
+    
+    <tr>
+        <td class="display-field">
+            @Html.DisplayFor(model => model.RestaurantId)
+        </td>
+        <td class="display-field">
+            @Html.DisplayFor(model => model.Reviewer)
+        </td>
+        <td class="display-field">
+            @Html.DisplayFor(model => model.Rating)
+        </td>
+        <td class="display-field">
+            @Html.DisplayFor(model => model.Body)
+        </td>
+
+    </tr>
+
+</table>
+
+
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "ReviewsByRestaurant", new { id = Model.RestaurantId})
+    </p>
+}
+    
+

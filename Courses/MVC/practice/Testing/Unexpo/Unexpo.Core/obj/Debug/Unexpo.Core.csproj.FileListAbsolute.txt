@@ -1,0 +1,5 @@
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\Unexpo\Unexpo.Core\bin\Debug\Unexpo.Core.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\Unexpo\Unexpo.Core\bin\Debug\Unexpo.Core.pdb
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\Unexpo\Unexpo.Core\obj\Debug\Unexpo.Core.csprojResolveAssemblyReference.cache
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\Unexpo\Unexpo.Core\obj\Debug\Unexpo.Core.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\Unexpo\Unexpo.Core\obj\Debug\Unexpo.Core.pdb

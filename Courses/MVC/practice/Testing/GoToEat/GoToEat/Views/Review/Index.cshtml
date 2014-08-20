@@ -1,0 +1,56 @@
+﻿@model GoToEat.Models.AllReviewView
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Restaurant ID
+
+        </th>
+        <th>
+            Review Id
+        </th>
+        <th>
+            Restaurant Name
+        </th>
+        <th>
+            Rating
+        </th>
+        <th>
+            Body
+        </th>
+        <th>
+            Reviewer
+        </th>
+    </tr>
+
+    
+        @foreach (var review in Model.Reviews)
+        {
+            <tr>
+                <td>@review.RestaurantId</td>
+                <td>@review.ReviewId</td>
+                <td>@Html.DisplayFor(x => review.RestaurantName)</td>
+                <td>@Html.DisplayFor(x => review.Rating)</td>
+                <td>@review.Body</td>
+                <td>@review.Reviewer</td>
+            </tr>
+        }
+    
+    @foreach (var restaurant in Model.AllReviewDetailViewModel)
+    {
+        <tr>
+            <td>@restaurant.RestaurantName</td>
+        </tr>
+    }
+    
+
+</table>

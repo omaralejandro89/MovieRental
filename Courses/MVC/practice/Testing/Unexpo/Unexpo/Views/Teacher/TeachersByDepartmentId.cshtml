@@ -1,0 +1,44 @@
+﻿@model Unexpo.Models.Teacher.AllTeachersView
+
+@{
+    ViewBag.Title = "TeachersByDepartmentId";
+}
+
+<h2>@Model.AllTeachersDetailViewModel.DepartmentName</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { id = Model.AllTeachersDetailViewModel.DepartmentId})
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Department Id
+        </th>
+        <th>Department Name</th>
+        <th>Teacher Id</th>
+        <th>Teacher Name</th>
+        <th></th>
+    </tr>
+
+    @foreach (var teacher in Model.Teachers) {
+        <tr>
+            <td>
+                @Html.DisplayFor(x => teacher.DepartmentId)
+            </td>
+            <td>@Html.DisplayFor(x => teacher.DepartmentName)</td>
+            <td>@Html.DisplayFor(x => teacher.TeacherId)</td>
+            <td>@Html.DisplayFor(x => teacher.TeacherName)</td>
+            <td>
+                @Html.ActionLink("Subjects", "SubjectsByTeacherId", "Subject", new { teacherId=teacher.TeacherId}, null) |
+                @Html.ActionLink("Edit", "Edit", new { id=teacher.TeacherId }) |
+                @* @Html.ActionLink("Details", "Details", new { id=teacher.DepartmentId }) *@|
+                @Html.ActionLink("Delete", "Delete", new { id=teacher.TeacherId })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<p>
+    @Html.ActionLink("Go back to see all the departments", "Index", "Home")
+</p>

@@ -1,0 +1,30 @@
+﻿@model MovieRental1.ViewModels.CustomersViewModel
+
+@{
+    ViewBag.Title = "AllCustomer";
+}
+
+<h2>AllCustomer</h2>
+
+<table>
+    <fieldset>
+        <legend>All Customers</legend>
+    </fieldset>    
+        <tr>
+            <th>Full Name</th>
+        </tr>
+        @foreach (var item in Model.Customers)
+        {
+            <tr>
+                <td>
+                    <div>
+                        <h4>@item.FirstName @item.LastName</h4>    
+                    </div>
+                </td>
+            </tr>
+
+        }
+
+</table>
+
+    

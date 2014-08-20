@@ -1,0 +1,44 @@
+﻿@model MovieRental3.Models.MovieDetailsViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<table class="table">
+    <tr>
+        <td>Movie</td>
+        <td>Year of release</td>
+        <td>Rented by</td>
+    </tr>
+    
+    <tr>
+        <td>@Model.Movie.Title</td>
+        <td>@Model.Movie.YearOfRelease</td>
+        <td>
+            <div>
+                @foreach (var customer in Model.Customers)
+                {
+                    <div>
+                        @customer.FirstName
+                        @customer.LastName
+                    </div>
+                }
+            </div>
+        </td>
+    </tr>
+</table>   
+
+
+@*<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.MovieId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@
+
+@*<div>
+    @Model.Movie.Title
+    @Model.Movie.YearOfRelease
+</div>*@
+
+

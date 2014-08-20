@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental2", "MovieRental2\MovieRental2.csproj", "{03FAA870-B8AC-4D25-8445-D14F227275FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental2.Tests", "MovieRental2.Tests\MovieRental2.Tests.csproj", "{8F6B8593-0B0E-4500-80F7-5BF3541672CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental.Core", "ClassLibrary1\MovieRental.Core.csproj", "{88B66109-3230-43CD-9289-79C50D278F7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03FAA870-B8AC-4D25-8445-D14F227275FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03FAA870-B8AC-4D25-8445-D14F227275FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03FAA870-B8AC-4D25-8445-D14F227275FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03FAA870-B8AC-4D25-8445-D14F227275FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F6B8593-0B0E-4500-80F7-5BF3541672CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F6B8593-0B0E-4500-80F7-5BF3541672CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F6B8593-0B0E-4500-80F7-5BF3541672CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F6B8593-0B0E-4500-80F7-5BF3541672CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B66109-3230-43CD-9289-79C50D278F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B66109-3230-43CD-9289-79C50D278F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B66109-3230-43CD-9289-79C50D278F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B66109-3230-43CD-9289-79C50D278F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

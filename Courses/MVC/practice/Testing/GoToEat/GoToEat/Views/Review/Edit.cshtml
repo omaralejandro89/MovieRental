@@ -1,0 +1,60 @@
+﻿@model GoToEat.Core.Models.Review
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Review</legend>
+        @Html.HiddenFor(model => model.ReviewId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RestaurantId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RestaurantId)
+            @Html.ValidationMessageFor(model => model.RestaurantId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Reviewer)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Reviewer)
+            @Html.ValidationMessageFor(model => model.Reviewer)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Rating)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Rating)
+            @Html.ValidationMessageFor(model => model.Rating)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Body)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Body)
+            @Html.ValidationMessageFor(model => model.Body)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "ReviewsByRestaurant", new { id = Model.RestaurantId})
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

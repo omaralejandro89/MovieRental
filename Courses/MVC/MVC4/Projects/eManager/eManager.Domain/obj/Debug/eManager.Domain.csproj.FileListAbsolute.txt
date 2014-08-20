@@ -1,0 +1,5 @@
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\MVC4\Projects\eManager\eManager.Domain\obj\Debug\eManager.Domain.csprojResolveAssemblyReference.cache
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\MVC4\Projects\eManager\eManager.Domain\bin\Debug\eManager.Domain.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\MVC4\Projects\eManager\eManager.Domain\bin\Debug\eManager.Domain.pdb
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\MVC4\Projects\eManager\eManager.Domain\obj\Debug\eManager.Domain.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\MVC4\Projects\eManager\eManager.Domain\obj\Debug\eManager.Domain.pdb

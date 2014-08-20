@@ -1,0 +1,5 @@
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\MovieRental3\Models\bin\Debug\Models.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\MovieRental3\Models\bin\Debug\Models.pdb
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\MovieRental3\Models\obj\Debug\MovieRental3.Core.csprojResolveAssemblyReference.cache
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\MovieRental3\Models\obj\Debug\Models.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\MovieRental3\Models\obj\Debug\Models.pdb

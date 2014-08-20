@@ -1,0 +1,38 @@
+﻿@model Unexpo.Core.Models.Teacher
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Teacher</legend>
+
+        @Html.HiddenFor(model => model.TeacherId)
+        @Html.HiddenFor(model => model.DepartmentId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TeacherName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TeacherName)
+            @Html.ValidationMessageFor(model => model.TeacherName)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "TeachersByDepartmentId", new { id = Model.DepartmentId})
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

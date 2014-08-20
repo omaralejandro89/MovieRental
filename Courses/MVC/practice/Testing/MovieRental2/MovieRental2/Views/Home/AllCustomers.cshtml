@@ -1,0 +1,51 @@
+﻿@using ClassLibrary1.Models
+@model MovieRental2.Models.AllCustomersView
+
+@{
+    ViewBag.Title = "AllCustomer";
+}
+<div class="container">
+    
+    <h2>All Customers</h2>
+    <h4>@Html.ActionLink("Create New Customer", "Create", "Home")</h4>
+    
+    <table class="table table-hover">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th></th>
+        </tr>
+    
+        @foreach (var customer in Model.CustomersList)
+        {
+            <tr>
+                <td>@customer.FirstName</td>
+                <td>
+                    <div>
+                        @customer.LastName
+                    </div>
+                </td>
+                <td class="btn-margin btn">
+                    <a href="@Url.Action("MoreInfo", new { id = customer.CustomerId })">
+                        <i class="glyphicon glyphicon-zoom-in"></i>
+                    </a>
+                    <a href="@Url.Action("Edit", new { id = customer.CustomerId })">
+                        <i class="glyphicon glyphicon-pencil"></i>
+                    </a>
+                    @*                    <div class="btn btn-default btn-sm">
+                        @Html.ActionLink("Edit", "Edit", "Home", new {id = customer.CustomerId}, new {@class="glyphicon glyphicon-pencil"})
+                    </div>*@
+                    @*                    <div class="btn btn-default btn-sm">
+                        @Html.ActionLink("Delete", "Delete", "Home", new { id = customer.CustomerId}, null)
+                    </div>  *@
+                    <a href="@Url.Action("Delete", new { id = customer.CustomerId })">
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </a>
+                </td>
+                
+                
+            </tr>
+        }
+    </table>
+</div>
+

@@ -1,0 +1,45 @@
+﻿@model LaraUniversities.Models.TeacherWorkplace.AllTeacherWorkplaceView
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { universityId = Model.TeacherWorkPlaceDetailsViewModel.UniversityId})
+</p>
+<table>
+    <tr>
+        <th>Teacher Id</th>
+        <th>UniversityId</th>
+        <th>
+            Teacher Name
+        </th>
+        <th>University Name</th>
+        <th></th>
+    </tr>
+
+@foreach (var teacherWorkplace in Model.TeacherWorkplaces) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => teacherWorkplace.TeacherId)
+        </td>
+        <td>
+            @Html.DisplayFor(x => teacherWorkplace.UniversityId)
+        </td>
+        <td>
+            @Html.DisplayFor(x => teacherWorkplace.TeacherName)            
+        </td>
+        <td>
+            @Html.DisplayFor(x => teacherWorkplace.UniversityName)            
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=teacherWorkplace.TeacherId }) |
+            @Html.ActionLink("Details", "Details", new { id=teacherWorkplace.TeacherId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=teacherWorkplace.TeacherId })
+        </td>
+    </tr>
+}
+
+</table>

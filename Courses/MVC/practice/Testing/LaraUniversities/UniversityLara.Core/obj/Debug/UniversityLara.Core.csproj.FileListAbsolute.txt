@@ -1,0 +1,5 @@
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\LaraUniversities\UniversityLara.Core\bin\Debug\UniversityLara.Core.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\LaraUniversities\UniversityLara.Core\bin\Debug\UniversityLara.Core.pdb
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\LaraUniversities\UniversityLara.Core\obj\Debug\UniversityLara.Core.csprojResolveAssemblyReference.cache
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\LaraUniversities\UniversityLara.Core\obj\Debug\UniversityLara.Core.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\LaraUniversities\UniversityLara.Core\obj\Debug\UniversityLara.Core.pdb

@@ -1,0 +1,4 @@
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\University\University.Core\bin\Debug\University.Core.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\University\University.Core\bin\Debug\University.Core.pdb
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\University\University.Core\obj\Debug\University.Core.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\University\University.Core\obj\Debug\University.Core.pdb

@@ -1,0 +1,49 @@
+﻿@model Unexpo.Models.Subject.AllSubjectsByTeacherIdView
+
+@{
+    ViewBag.Title = "SubjectsByTeacherId";
+    
+}
+
+<h2>@Model.AllSubjectsDetailViewModel.TeacherName</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AllSubjectsDetailViewModel.SubjectName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AllSubjectsDetailViewModel.TeacherId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AllSubjectsDetailViewModel.TeacherName)
+        </th>
+        <th></th>
+    </tr>
+    
+    @foreach (var subject in Model.SubjectsByTeacherId)
+    {
+        <tr>  
+            <td>
+                @Html.DisplayFor(x => subject.SubjectName)
+            </td>
+            <td>
+                @Html.DisplayFor(x => subject.TeacherId)
+            </td>
+            <td>
+                @Html.DisplayFor(x => subject.TeacherName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=subject.SubjectId }) |
+                @Html.ActionLink("Details", "Details", new { id=subject.SubjectId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=subject.SubjectId })
+            </td>
+        </tr>
+    }
+
+</table>
+ @Html.ActionLink("Go back", "TeachersByDepartmentId", "Teacher", new { id=Model.AllSubjectsDetailViewModel.DepartmentId}, null)
+

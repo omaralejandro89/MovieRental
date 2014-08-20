@@ -1,0 +1,36 @@
+﻿@using System.Web.UI.WebControls
+@model Practicing.Models.Customer
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Create a new Customer</legend>
+        
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+            </tr>
+            
+            @Html.EditorFor(model => model.CustomerId)
+            
+            <div class="editor-label">
+                @Html.LabelFor(model => model.FirstName)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.FirstName)
+            </div>
+            
+
+
+        </table>
+    </fieldset>
+}

@@ -1,0 +1,43 @@
+﻿@model MovieRental3.Models.HomeViewModel
+
+   
+    @{
+        ViewBag.Title = "All Customers";
+    }
+
+    <h2>All Customers</h2>
+    <table class="table table-responsive">
+    
+        <tr>
+            <td>Customer Id</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td></td>
+        </tr>
+
+        @foreach (var customer in Model.CustomersList)
+        {
+            <tr>
+                <td>@customer.CustomerId</td>
+                <td>@customer.FirstName</td>
+                <td>@customer.LastName</td>
+                <td class="btn-margin">
+                    <a href="@Url.Action("Index", "MovieAlquilada", new { id = customer.CustomerId})">
+                        See Movies Rented
+                    </a>
+@*                    <a href="@Url.Action("See Movies Rented", "Index", "MovieAlquilada" new { id = customer.CustomerId})">
+                        <i class="glyphicon glyphicon-zoom-in"></i>
+                    </a>*@
+                    <a href="@Url.Action("Edit", new {id = customer.CustomerId})">
+                        <i class="glyphicon glyphicon-pencil"></i>
+                    </a>
+                    <a href="@Url.Action("Delete", new { id = customer.CustomerId})">
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </a>
+                    
+                </td>
+            </tr>    
+        }
+    
+    </table>
+

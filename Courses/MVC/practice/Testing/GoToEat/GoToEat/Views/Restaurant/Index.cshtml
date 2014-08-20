@@ -1,0 +1,48 @@
+﻿@model GoToEat.Models.AllRestaurantsView
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container">
+    
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Restaurant Name
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            Country
+        </th>
+        <th></th>
+    </tr>
+    
+    @foreach (var restaurant in Model.Restaurants)
+{
+    <tr>
+        <td>@restaurant.RestaurantName</td>
+        <td>@restaurant.City</td>
+        <td>@restaurant.Country</td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=restaurant.RestaurantId }) |
+            @Html.ActionLink("Details", "Details", new { id=restaurant.RestaurantId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=restaurant.RestaurantId }) |
+            @Html.ActionLink("Reviews", "ReviewsByRestaurant", "Review", new
+            {
+                id=restaurant.RestaurantId
+            }, null)
+        </td>
+    </tr>
+}
+
+</table>
+
+</div>

@@ -1,0 +1,44 @@
+﻿@model Practicing.Models.Customer
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h2>Are you sure you want to delete this?</h2>
+<fieldset>
+    <legend>Customer</legend>
+    
+    <div class="editor-label">
+        @Html.LabelFor(model => model.FirstName)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.FirstName)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.LastName)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.LastName)
+    </div>
+    
+    <div class="editor-label">
+        @Html.LabelFor(model => model.City)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.City)
+    </div>
+    
+    @using (Html.BeginForm())
+    {
+        <p>
+            <input type="submit" value="Delete"/>
+            @Html.ActionLink("Back to list", "Index");
+        </p>
+    }
+    
+
+
+</fieldset>

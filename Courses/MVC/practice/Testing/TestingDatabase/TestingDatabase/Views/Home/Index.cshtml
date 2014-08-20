@@ -1,0 +1,12 @@
+﻿@model IEnumerable<TestingDatabase.Models.Restaurant>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@foreach (var item in Model)
+{
+    @item.Id @item.Name @item.City @item.RestaurantReviews
+    <hr/>
+}
+

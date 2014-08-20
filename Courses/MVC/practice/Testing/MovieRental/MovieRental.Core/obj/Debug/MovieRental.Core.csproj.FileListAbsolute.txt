@@ -1,0 +1,4 @@
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\MovieRental\MovieRental.Core\bin\Debug\MovieRental.Core.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\MovieRental\MovieRental.Core\bin\Debug\MovieRental.Core.pdb
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\MovieRental\MovieRental.Core\obj\Debug\MovieRental.Core.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\MovieRental\MovieRental.Core\obj\Debug\MovieRental.Core.pdb

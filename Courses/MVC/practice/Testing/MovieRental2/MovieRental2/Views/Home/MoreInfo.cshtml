@@ -1,0 +1,41 @@
+﻿@model MovieRental2.Models.RentalDetailsViewModel
+@{
+    ViewBag.Title = "MoreInfo";
+}
+
+<h2>MoreInfo</h2>
+
+@if (Model.HasMovies)
+{
+    <table class="table">
+        <tr>
+            <td>Movie</td>
+            <td>Year Of Release</td>
+            <td>Data Taken</td>
+            <td>Movie Rental Id</td>
+            <td>Returned?</td>
+        </tr>
+        @foreach (var rentedDetailsMovieViewModel in Model.Movies)
+        {
+            <tr>
+                <td>@rentedDetailsMovieViewModel.MovieName</td>
+                <td>@rentedDetailsMovieViewModel.YearOfRelease</td>
+                <td>@rentedDetailsMovieViewModel.DateTaken</td>
+                <td>@rentedDetailsMovieViewModel.MovieRentalId</td>
+                @if (rentedDetailsMovieViewModel.IsReturened)
+                {
+                    <td>@rentedDetailsMovieViewModel.DateReturned.Value.ToShortDateString()</td>
+                 
+                }
+                else
+                {
+                    <td>You didn't return the movie</td>
+                }
+            </tr>   
+        }
+    </table>
+}
+else
+{
+    <p>You didn't rent any movie</p>
+}

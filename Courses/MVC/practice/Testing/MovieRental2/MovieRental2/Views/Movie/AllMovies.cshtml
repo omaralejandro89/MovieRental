@@ -1,0 +1,26 @@
+﻿@using ClassLibrary1.Models
+@model MovieRental2.Models.AllMoviesView
+
+@{
+    ViewBag.Title = "AllMovies";
+}
+
+<h2>AllMovies</h2>
+
+<table>
+    <legend>Movies</legend>
+    <table>
+        <tr>
+            <th>Movie</th>
+            <th>Year Of Release</th>
+        </tr>
+        
+        @foreach (var movie in Model.MovieList)
+        {
+            <tr>
+                <td>@movie.Title</td>
+                <td>@movie.YearOfRelease</td>
+            </tr>
+        }
+    </table>
+</table>

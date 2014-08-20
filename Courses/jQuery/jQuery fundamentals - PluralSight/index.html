@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<style>
+		.Highlight { background-color: yellow;}
+	</style>
+
+</head>
+<body>
+	<div id="myDiv">This is some text</div>
+	<form id="form1" runar="server">
+		<table style="width:300px">
+			<tr>
+				<td style="width:30%">First Name</td>
+				<td style="width: 70%"><input id="FirstNameTextBox" type="text"/></td>
+			</tr>
+			<tr>
+				<td style="width:30%">Last Name</td>
+				<td style="width: 70%"><input class="myInput" id="LastNameTextBox" type="text"/></td>
+			</tr>
+			<tr>
+				<td>Comments</td>
+				<td><textarea class="myInput" rows="5" cols="60" id="CommentsTextBox">TextArea</textarea></td>
+			</tr>
+			<tr>
+				<td>
+					<select id="StatesSelect">
+						<option value="LA">LA</option>
+						<option value="CS">CS</option>
+					</select>
+				</td>	
+			</tr>
+			<tr>
+				<td><input id="SubmitButton" type="button" value="Submit"></td>	
+				<td>
+					<div id="DivOutput"></div>
+				</td>	
+			</tr
+		</table>
+	</form>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			WireEvents();
+		});
+
+		function WireEvents() {
+			$("#SubmitButton").click(function() {
+				var firstNameVal = $("#FirstNameTextBox").val();
+				var lastNameVal = $("#LastNameTextBox").val();
+				$("#DivOutput").text(firstNameVal + ' ' + lastNameVal);	
+			});
+
+			//Handle Select
+			/*
+			$(".myInput").change(function() {
+				$(this).addClass("Highlight");
+			})
+
+			$('#myDiv, tr').mouseenter(function() {
+				Toggle(this);
+				$(this).css('cursor', 'pointer');
+			}).mouseleave(function() {
+				$(this).toggleClass("Highlight");
+			})
+			.mouseup(function(e) {
+				alert($(e.target).attr('id'));
+				$(this).text('X:' + e.pageX + ' ' + 'Y' + e.pageY)
+			})
+
+			function Toggle(div) {
+				$(div).toggleClass('Highlight');
+			}
+			*/
+
+			//bind() and on()
+			$('#myDiv').on('mouseenter mouseleave mouseup', function(e) {
+				
+			})
+
+			
+		}
+
+	</script>
+</body>
+</html>

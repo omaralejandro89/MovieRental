@@ -1,0 +1,36 @@
+﻿@model MovieRental.ModelsView.AllCustomersView
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h4>All Customers</h4>
+<div>
+    <p>@Html.ActionLink("Create a new customer", "Create", "Home")</p>
+    <p>@Html.ActionLink("See all our movies", "Index", "Movie")</p>
+</div>
+
+
+<table>
+    <tr>
+        <th>Customer Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th></th>
+    </tr>
+    
+    @foreach (var customer in Model.CustomerList)
+    {
+        <tr>
+            <td>@customer.CustomerId</td>
+            <td>@customer.FirstName</td>
+            <td>@customer.LastName</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = customer.CustomerId }, null)
+                @Html.ActionLink("Delete", "Delete", new { id = customer.CustomerId})  
+                @Html.ActionLink("Movies", "MoviesByCustomer")
+            </td>
+        </tr>
+    }
+   
+</table>

@@ -1,0 +1,32 @@
+body {
+	background-color: #cccc99;
+	font-family: Arial, Sans-Serif;
+}
+
+.ui-progressbar {
+	height: 14px;
+	width: 300px;
+}
+
+
+.ui-draggable {
+	background-color: red;
+	height: 100px;
+	width: 100px;
+	border-radius: 4px;
+	text-align: center;
+	display: inline-block;
+	box-shadow: 5px;
+}
+
+.ui-draggable header {
+	background: blue;
+	padding: 10px;
+}
+
+#draggables {
+	background: #ccc;
+	border: solid #000 3px;
+	width: 400px;
+	height: 400px;
+}

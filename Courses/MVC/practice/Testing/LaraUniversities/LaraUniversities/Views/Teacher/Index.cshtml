@@ -1,0 +1,40 @@
+﻿@using UniversityLara.Core.Models
+@model LaraUniversities.Models.Teacher.AllTeacherView
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            Teacher Id
+        </th>
+        <th>
+            Teacher Name
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var teacher in Model.Teachers) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => teacher.TeacherId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => teacher.TeacherName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=teacher.TeacherId }) |
+            @Html.ActionLink("Details", "Details", new { id=teacher.TeacherId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=teacher.TeacherId })
+        </td>
+    </tr>
+}
+
+</table>

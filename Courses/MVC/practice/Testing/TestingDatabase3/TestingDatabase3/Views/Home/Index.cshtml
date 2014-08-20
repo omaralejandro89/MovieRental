@@ -1,0 +1,20 @@
+﻿@model IEnumerable<TestingDatabase3.Models.RestaurantListViewModel>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<form method="get">
+    <input type="search" name="search"/>
+    <input type="submit" value="Search your favorite Restaurant"/>
+</form>
+
+@foreach (var item in Model)
+{
+    <div>
+        <h4>@item.Name</h4>
+        <p>@item.City</p>
+        <p>Reviews: @item.NumberOfReviews</p>
+        <hr/>
+    </div>
+}

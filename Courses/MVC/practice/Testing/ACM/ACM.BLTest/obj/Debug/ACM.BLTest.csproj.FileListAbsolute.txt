@@ -1,0 +1,7 @@
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\ACM\ACM.BLTest\bin\Debug\ACM.BLTest.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\ACM\ACM.BLTest\bin\Debug\ACM.BLTest.pdb
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\ACM\ACM.BLTest\bin\Debug\ACM.BL.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\ACM\ACM.BLTest\bin\Debug\ACM.BL.pdb
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\ACM\ACM.BLTest\obj\Debug\ACM.BLTest.csprojResolveAssemblyReference.cache
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\ACM\ACM.BLTest\obj\Debug\ACM.BLTest.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\ACM\ACM.BLTest\obj\Debug\ACM.BLTest.pdb

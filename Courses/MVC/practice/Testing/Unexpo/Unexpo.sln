@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unexpo", "Unexpo\Unexpo.csproj", "{3B45ACAE-AC6A-45E5-952A-AF2E59104589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unexpo.Tests", "Unexpo.Tests\Unexpo.Tests.csproj", "{8F296B0A-69DC-4BC2-BF07-E735393E1F10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unexpo.Core", "Unexpo.Core\Unexpo.Core.csproj", "{1C6C4BF4-3546-4CE5-9122-0314BB01B317}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B45ACAE-AC6A-45E5-952A-AF2E59104589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B45ACAE-AC6A-45E5-952A-AF2E59104589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B45ACAE-AC6A-45E5-952A-AF2E59104589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B45ACAE-AC6A-45E5-952A-AF2E59104589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F296B0A-69DC-4BC2-BF07-E735393E1F10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F296B0A-69DC-4BC2-BF07-E735393E1F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F296B0A-69DC-4BC2-BF07-E735393E1F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F296B0A-69DC-4BC2-BF07-E735393E1F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C6C4BF4-3546-4CE5-9122-0314BB01B317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C6C4BF4-3546-4CE5-9122-0314BB01B317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C6C4BF4-3546-4CE5-9122-0314BB01B317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C6C4BF4-3546-4CE5-9122-0314BB01B317}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

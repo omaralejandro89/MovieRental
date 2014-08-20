@@ -1,0 +1,5 @@
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\GoToEat\GoToEat.Core\bin\Debug\GoToEat.Core.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\GoToEat\GoToEat.Core\bin\Debug\GoToEat.Core.pdb
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\GoToEat\GoToEat.Core\obj\Debug\GoToEat.Core.csprojResolveAssemblyReference.cache
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\GoToEat\GoToEat.Core\obj\Debug\GoToEat.Core.dll
+C:\Users\omar\Desktop\Omar\Treehouse\Courses\MVC\practice\Testing\GoToEat\GoToEat.Core\obj\Debug\GoToEat.Core.pdb

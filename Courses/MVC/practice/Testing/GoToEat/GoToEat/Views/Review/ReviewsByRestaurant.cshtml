@@ -1,0 +1,53 @@
+﻿@model GoToEat.Models.AllRestaurantReviewsView
+
+@{
+    ViewBag.Title = "ReviewsByRestaurant";
+}
+
+<h2>@Model.RestaurantDetailsViewModel.RestaurantName</h2>
+
+<p>
+    @Html.ActionLink("Add a new review", "Create", new { restaurantId = Model.RestaurantDetailsViewModel.RestaurantId})
+</p>
+
+@if (Model.HasReviews)
+{
+
+
+    <table class="table">
+    
+        <tr>
+            @*        <th>Review Id</th>
+        <th>RestaurantId</th>*@
+            <td>Reviewer</td>
+            <td>Rating</td>
+            <td>Body</td>
+        </tr>
+    
+        @foreach (var review in Model.RestaurantReviews)
+        {
+            <tr>
+                @*            <td>@review.ReviewId</td>
+            <td>@review.RestaurantId</td>*@
+                <td>@review.Reviewer</td>
+                <td>@review.Rating</td>
+                <td>@review.Body</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new {id = review.ReviewId}) |
+                    @Html.ActionLink("Delete", "Delete", new {id = review.ReviewId})
+                </td>
+
+            </tr>
+        }
+
+    </table>
+
+}
+else
+{
+    <h5 class="panel-heading">This restaurant does not have any reviews</h5>
+}
+
+@Html.ActionLink("Go Back to see all the restaurants", "Index", "Restaurant" )
+
+

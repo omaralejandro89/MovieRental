@@ -1,0 +1,29 @@
+﻿@model MovieRental.ModelsView.AllMoviesView
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <p>@Html.ActionLink("Create New", "Create")</p>
+    <p>@Html.ActionLink("See all our customers", "Index", "Home")</p>
+</div>
+<table>
+    <tr>
+        <th>Movie Id</th>
+        <th>Title</th>
+        <th>Year of release</th>
+    </tr>
+    
+    @foreach (var movie in Model.MovieList)
+    {
+        <tr>
+            <td>@movie.MovieId</td>
+            <td>@movie.Title</td>
+            <td>@movie.YearOfRelease</td>
+        </tr>
+    }
+
+</table>

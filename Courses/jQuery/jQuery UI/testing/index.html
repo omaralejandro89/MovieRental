@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<style>
+	body{
+		font: 62.5% "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	</style>
+</head>
+<body>
+
+	<h1>jQuery Widgets</h1>
+
+	<div id="dialog" title="Attention!" >
+		<p>Are you sure you want to do this?</p>
+	</div>
+	<input type="button" value="Click me!" id="openDialog">
+
+	<hr />
+	<h3>The Progress Bar</h3>
+		<div id="progress"></div>
+		<div id="countdown"></div>
+	<hr/>
+	<h3>The Slider</h3>
+		<div id="slider-test"></div>
+	<hr/>
+	<h3>Tabs</h3>
+		<div id="tabs-testing">
+			<ul>
+				<li><a href="#tab-1">HTML</a></li>
+				<li><a href="#tab-2">CSS</a></li>
+				<li><a href="#tab-3">jQuery</a></li>
+				<li><a href="tabtesting.html">Bonus!</a></li>
+			</ul>
+			<div id="tab-1">
+				<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin..</p>
+			</div>
+			<div id="tab-2">
+				<p>Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla.</p>
+			</div>
+			<div id="tab-3">
+				<p>Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus</p>
+			</div>		
+		</div>
+		<hr/>
+
+		<h3>The Accordian</h3>
+		<div id="accordian">
+			<h3><a href="#">C#</a></h3>
+			<div>
+				<p>Hi! Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin..Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin..Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin..</p>
+			</div>
+			<h3><a href="#">HTML</a></h3>
+			<div>
+				<p>HOLA!</p>
+			</div>
+			<h3><a href="#">CSS</a></h3>
+			<div>
+				<p>HEI!</p>
+			</div>
+		</div>
+		<hr/>
+
+		<h2>The Autocomplete</h2>
+		<div>
+			<label for="search">Search:</label>
+			<input id="search" type="text"/>
+		</div>
+		<hr/>
+
+
+		<h2>The Button</h2>
+
+		<div id="buttons">
+			<button>A button element</button>
+			<input type="submit" value="An input submit">
+			<a href="#">An anchor element</a>
+		</div>
+
+		<div id="radios">
+			<input type="radio" id="language1" name="language"/><label for="language1">JavaScript</label>
+			<input type="radio" id="language2" name="language"/><label for="language2">Java</label>
+			<input type="radio" id="language3" name="language"/><label for="language3">jQuery</label>
+		</div>
+
+		<div id="checks">
+			<input type="checkbox" id="paradigm1" name="language"/><label for="paradigm1">JavaScript</label>
+			<input type="checkbox" id="paradigm2" name="language"/><label for="paradigm2">Java</label>
+			<input type="checkbox" id="paradigm3" name="language"/><label for="paradigm3">jQuery</label>
+		</div>
+		<hr/>
+
+		<h2>The DatePicker</h2>
+		<div>
+			<input type="text" id="dateselection" />
+		</div>
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
+
+
+$( "#button" ).button();
+$( "#radioset" ).buttonset();
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+
+
+$( "#datepicker" ).datepicker({
+	inline: true
+});
+
+
+
+$( "#slider" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+
+
+
+$( "#progressbar" ).progressbar({
+	value: 20
+});
+
+
+
+$( "#spinner" ).spinner();
+
+
+
+$( "#menu" ).menu();
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+$( "#selectmenu" ).selectmenu();
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+<script src="page.js"></script>
+</body>
+</html>

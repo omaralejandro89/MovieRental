@@ -1,0 +1,52 @@
+﻿@model MovieRental3.Models.MovieAlquiladaViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@if (Model.HasMovies)
+{
+    <table class="table">
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Year of release
+            </th>
+            <th></th>
+        </tr>
+    
+        @foreach (var movieAlquilada in Model.Movies)
+        {
+            <tr>
+                <td>
+                    @movieAlquilada.MovieName
+                </td>
+                <td>
+                    @movieAlquilada.YearOfRelease
+                </td>
+                <td>
+                    @*            @Html.ActionLink("Edit", "Edit", new { id=item.MovieId }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.MovieId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.MovieId })*@
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+else
+{
+    <h4>You have not rented movies.</h4>
+    <h5>@Html.ActionLink("See out list of movies", "Index", "Movie")</h5>
+    
+}
+
+

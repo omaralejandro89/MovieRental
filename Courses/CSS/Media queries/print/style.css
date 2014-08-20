@@ -1,0 +1,19 @@
+
+
+@media print {
+    * {
+        background: red !important;
+        box-shadow: none !important;
+        color: #000 !important;
+        text-shadow: none !important;
+    }
+    
+
+    p {
+	color: red !important;
+	font-size: 20px;
+    }
+    
+    .main-na
+    	
+}
